@@ -1,0 +1,147 @@
+         2616 function calls (2329 primitive calls) in 1.966 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.002    0.002    1.909    1.909 d:\GitProjects\Pytorch-UNet-master\predict.py:17(predict_img)
+     95/1    0.037    0.000    1.845    1.845 D:\Python\lib\site-packages\torch\nn\modules\module.py:1494(_call_impl)
+        1    0.004    0.004    1.834    1.834 d:\GitProjects\Pytorch-UNet-master\unet\unet_model.py:25(forward)
+     13/9    0.052    0.004    1.550    0.172 D:\Python\lib\site-packages\torch\nn\modules\container.py:215(forward)
+        9    0.000    0.000    1.479    0.164 d:\GitProjects\Pytorch-UNet-master\unet\unet_parts.py:24(forward)
+       19    0.000    0.000    1.346    0.071 D:\Python\lib\site-packages\torch\nn\modules\conv.py:462(forward)
+       19    0.000    0.000    1.346    0.071 D:\Python\lib\site-packages\torch\nn\modules\conv.py:454(_conv_forward)
+       19    1.346    0.071    1.346    0.071 {built-in method torch.conv2d}
+        4    0.008    0.002    1.132    0.283 d:\GitProjects\Pytorch-UNet-master\unet\unet_parts.py:56(forward)
+        4    0.000    0.000    0.524    0.131 d:\GitProjects\Pytorch-UNet-master\unet\unet_parts.py:38(forward)
+        4    0.000    0.000    0.187    0.047 D:\Python\lib\site-packages\torch\nn\modules\conv.py:944(forward)
+        4    0.187    0.047    0.187    0.047 {built-in method torch.conv_transpose2d}
+        4    0.000    0.000    0.068    0.017 D:\Python\lib\site-packages\torch\nn\modules\pooling.py:165(forward)
+        4    0.000    0.000    0.068    0.017 D:\Python\lib\site-packages\torch\_jit_internal.py:474(fn)
+        4    0.000    0.000    0.068    0.017 D:\Python\lib\site-packages\torch\nn\functional.py:760(_max_pool2d)
+        4    0.068    0.017    0.068    0.017 {built-in method torch.max_pool2d}
+       18    0.000    0.000    0.061    0.003 D:\Python\lib\site-packages\torch\nn\modules\batchnorm.py:137(forward)
+       18    0.000    0.000    0.061    0.003 D:\Python\lib\site-packages\torch\nn\functional.py:2419(batch_norm)
+       18    0.061    0.003    0.061    0.003 {built-in method torch.batch_norm}
+        1    0.054    0.054    0.057    0.057 d:\GitProjects\Pytorch-UNet-master\predict.py:65(mask_to_image)
+        1    0.002    0.002    0.042    0.042 d:\GitProjects\Pytorch-UNet-master\utils\data_loading.py:65(preprocess)
+        1    0.000    0.000    0.040    0.040 D:\Python\lib\site-packages\PIL\Image.py:1975(resize)
+       18    0.000    0.000    0.037    0.002 D:\Python\lib\site-packages\torch\nn\modules\activation.py:102(forward)
+       18    0.000    0.000    0.037    0.002 D:\Python\lib\site-packages\torch\nn\functional.py:1446(relu)
+       18    0.037    0.002    0.037    0.002 {built-in method torch.relu_}
+        4    0.031    0.008    0.031    0.008 {built-in method torch.cat}
+        1    0.021    0.021    0.021    0.021 {method 'resize' of 'ImagingCore' objects}
+        5    0.019    0.004    0.019    0.004 {method 'decode' of 'ImagingDecoder' objects}
+        2    0.000    0.000    0.018    0.009 D:\Python\lib\site-packages\PIL\ImageFile.py:149(load)
+        1    0.000    0.000    0.016    0.016 d:\GitProjects\Pytorch-UNet-master\unet\unet_parts.py:76(forward)
+        4    0.013    0.003    0.013    0.003 {built-in method torch.nn.functional.pad}
+        1    0.000    0.000    0.008    0.008 D:\Python\lib\site-packages\torch\nn\functional.py:3772(interpolate)
+        1    0.008    0.008    0.008    0.008 {built-in method torch._C._nn.upsample_bilinear2d}
+        1    0.007    0.007    0.007    0.007 {built-in method torch.sigmoid}
+        1    0.000    0.000    0.003    0.003 D:\Python\lib\site-packages\PIL\Image.py:2904(fromarray)
+        1    0.000    0.000    0.003    0.003 D:\Python\lib\site-packages\PIL\Image.py:2847(frombuffer)
+        1    0.000    0.000    0.003    0.003 D:\Python\lib\site-packages\PIL\Image.py:2809(frombytes)
+        1    0.002    0.002    0.002    0.002 {method 'long' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\PIL\Image.py:776(frombytes)
+        1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\PIL\Image.py:2770(new)
+        1    0.001    0.001    0.001    0.001 {built-in method PIL._imaging.fill}
+        1    0.001    0.001    0.001    0.001 {method 'to' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\torch\nn\modules\module.py:2291(eval)
+     95/1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\torch\nn\modules\module.py:2269(train)
+        1    0.000    0.000    0.001    0.001 {built-in method numpy.asarray}
+        1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\PIL\Image.py:674(__array_interface__)
+        1    0.000    0.000    0.001    0.001 D:\Python\lib\site-packages\PIL\Image.py:705(tobytes)
+       95    0.000    0.000    0.000    0.000 {built-in method torch._C._get_tracing_state}
+       95    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\module.py:1617(__setattr__)
+       11    0.000    0.000    0.000    0.000 {method 'encode' of 'ImagingEncoder' objects}
+      168    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\module.py:1601(__getattr__)
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
+      189    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\module.py:2167(children)
+  399/304    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        4    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\JpegImagePlugin.py:397(load_read)
+        4    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 {method 'unsqueeze' of 'torch._C._TensorBase' objects}
+      189    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\module.py:2176(named_children)
+       95    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\parameter.py:8(__instancecheck__)
+        1    0.000    0.000    0.000    0.000 {built-in method torch.from_numpy}
+       18    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\batchnorm.py:408(_check_input_dim)
+        4    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\conv.py:632(_output_padding)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:238(_conv_type_shape)
+       13    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\container.py:207(__iter__)
+        4    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\nn\modules\utils.py:9(parse)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageMode.py:36(getmode)
+        1    0.000    0.000    0.000    0.000 {method 'any' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:383(_getdecoder)
+      286    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageFile.py:280(load_prepare)
+       30    0.000    0.000    0.000    0.000 {method 'dim' of 'torch._C._TensorBase' objects}
+        2    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:531(_new)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:56(__getattr__)
+        1    0.000    0.000    0.000    0.000 {method 'squeeze' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.new}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\numpy\core\_methods.py:55(_any)
+       18    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\backends\__init__.py:31(__get__)
+        1    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        4    0.000    0.000    0.000    0.000 D:\Python\lib\abc.py:117(__instancecheck__)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:406(_getencoder)
+        1    0.000    0.000    0.000    0.000 {method 'numpy' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method _abc._abc_instancecheck}
+       16    0.000    0.000    0.000    0.000 {method 'size' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 {method 'cpu' of 'torch._C._TensorBase' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\_deprecate.py:8(deprecate)
+       23    0.000    0.000    0.000    0.000 {built-in method torch._C._has_torch_function_unary}
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.jpeg_decoder}
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_encoder}
+       18    0.000    0.000    0.000    0.000 {built-in method torch._C._get_cudnn_enabled}
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.zeros}
+        1    0.000    0.000    0.000    0.000 {built-in method _warnings.warn}
+       94    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       34    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageMode.py:25(__init__)
+       95    0.000    0.000    0.000    0.000 {function _ParameterMeta.__instancecheck__ at 0x00000206A320CE50}
+        4    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:802(load)
+        3    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:500(__init__)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\autograd\grad_mode.py:53(__enter__)
+       95    0.000    0.000    0.000    0.000 {method 'items' of 'collections.OrderedDict' objects}
+       18    0.000    0.000    0.000    0.000 {built-in method torch._C._has_torch_function_variadic}
+       13    0.000    0.000    0.000    0.000 {built-in method builtins.iter}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\autograd\grad_mode.py:57(__exit__)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\abc.py:121(__subclasscheck__)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\autograd\grad_mode.py:48(__init__)
+        2    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\autograd\grad_mode.py:149(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+       13    0.000    0.000    0.000    0.000 {method 'values' of 'collections.OrderedDict' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\_collections_abc.py:262(__subclasshook__)
+        3    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:2752(_check_size)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:513(__getattr__)
+       11    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:527(size)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\_collections_abc.py:78(_check_methods)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageFile.py:219(<listcomp>)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        3    0.000    0.000    0.000    0.000 {built-in method torch.is_grad_enabled}
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_decoder}
+        3    0.000    0.000    0.000    0.000 D:\Python\lib\enum.py:451(__members__)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        3    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
+        2    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:523(height)
+        2    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+       11    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
+        1    0.000    0.000    0.000    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+        2    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\Image.py:519(width)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        2    0.000    0.000    0.000    0.000 {built-in method torch._C._set_grad_enabled}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\enum.py:439(__getitem__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingDecoder' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\torch\_jit_internal.py:1102(is_scripting)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageFile.py:74(_tilesort)
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageFile.py:222(<lambda>)
+        2    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 D:\Python\lib\site-packages\PIL\ImageFile.py:288(load_end)
+
+
